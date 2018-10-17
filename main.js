@@ -32,9 +32,12 @@ $(document).ready(function() {
         if ($(this).text() === "") {
           if (step % 2 === 0) {
             $(this).text("X");
-          } else if (step % 2 === 1) {
-            $(this).text("O");
-          }
+            step++;
+            computerMove();
+          } // else if (step % 2 === 1) {
+          //   $(this).text("O");
+          // }
+          debugger;
           step++;
           checkWinner();
         }
@@ -148,4 +151,18 @@ $(document).ready(function() {
     // $(".square").text("");
     location.reload();
   });
+
+  // var array = [];
+  // if ($(".square").on("click")) {
+  //   array.push($(this).attr("id"));
+
+  function computerMove() {
+    var squares = $(".square");
+    for (var i = 0; i < squares.length; i++) {
+      if ($(squares[i]).text() === "") {
+        $(squares[i]).text("O");
+        break;
+      }
+    }
+  }
 });
