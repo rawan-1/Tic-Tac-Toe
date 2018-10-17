@@ -37,7 +37,7 @@ $(document).ready(function() {
           } // else if (step % 2 === 1) {
           //   $(this).text("O");
           // }
-          debugger;
+          // debugger;
           step++;
           checkWinner();
         }
