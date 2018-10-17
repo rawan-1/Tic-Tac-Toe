@@ -1,0 +1,167 @@
+body {
+  /* display: flex; */
+  background-color: rgba(210, 227, 241, 0.671);
+  /* justify-content: center; */
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+.header-text {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-family: "Fredericka the Great", cursive;
+  /* font-family: "Almendra SC", serif; */
+  /* font-family: "Frijole", cursive; */
+  color: rgb(99, 99, 99);
+  font-size: 20px;
+  word-spacing: 10px;
+}
+
+#board {
+  width: 90vw;
+  height: 90vw;
+  min-width: 300px;
+  min-height: 300px;
+  max-width: 600px;
+  max-height: 600px;
+  background-color: rgba(128, 128, 128, 0.185);
+  box-shadow: 0 3px 6px 0 rgba(80, 80, 80, 0.288),
+    0 3px 12px 0 rgba(80, 80, 80, 0.288);
+  text-align: center;
+  margin-top: 20px;
+}
+.square {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  width: calc(95% / 3);
+  height: 100%;
+  overflow: hidden;
+  line-height: 27vh;
+}
+
+.row.top,
+.row.middle {
+  border-bottom: dashed 2px rgba(145, 145, 145, 0.747);
+}
+
+.square.left,
+.square.middle {
+  border-right: dashed 2px rgba(145, 145, 145, 0.747);
+}
+#board > .row {
+  height: calc(100% / 3);
+  margin: 0px;
+  padding: 0px;
+}
+
+.all {
+  /* border: 1px solid rgba(139, 139, 139, 0.555); */
+  height: 100%;
+  margin-right: 100px;
+  margin-top: 170px;
+}
+.drone-btn {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  font-family: "Fredericka the Great", cursive;
+  /* font-family: "Frijole", cursive; */
+  color: rgb(71, 71, 71);
+  font-size: 40px;
+  /* margin-top: 0%; */
+  /* border: 1px solid red; */
+}
+.letButton {
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid rgb(32, 29, 29); */
+}
+.btn {
+  display: flex;
+  background-color: #5f5f5fb0;
+  border: none;
+  color: white;
+  padding: 13px 22px;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.6;
+  transition: 0.3s;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.button1 {
+  justify-content: center;
+  display: flex;
+}
+
+.button {
+  display: flex;
+  background-color: #5f5f5fb0;
+  border: none;
+  color: white;
+  padding: 13px 22px;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.6;
+  transition: 0.3s;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.win-text {
+  border: 1px solid gray;
+  background-color: rgba(160, 158, 158, 0.603);
+  padding: 5px 5px;
+  padding-right: 9px;
+  /* display: flex; */
+  /* justify-content : space-around; */
+}
+
+.win-times {
+  border: 1px solid gray;
+  background-color: rgba(160, 158, 158, 0.603);
+  padding: 3px 3px;
+  display: flex;
+  justify-content: space-around;
+  width: 70px;
+}
+
+.time-text {
+  border: 1px solid gray;
+  background-color: rgba(160, 158, 158, 0.603);
+  padding: 3px 3px;
+  display: flex;
+  justify-content: space-around;
+  justify-content: csnter;
+
+  width: 70px;
+}
+
+.one {
+  position: relative;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  /* margin-top: 130px; */
+}
+
+.two {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  /* margin-top: 10px; */
+  justify-content: flex-start;
+}
+.swal-overlay {
+  background-color: rgba(155, 166, 175, 0.671);
+}
