@@ -27,4 +27,5 @@ I will add an AI and multi-player in different networks.
 
 ## Special Thanks:
 
-To Jack, Trevor, and Moath who work to help in everything they know, and their presence whenever we need them.  **Thank you.**
+To Jack, Trevor, and Moath who work to help in everything they know, and their presence whenever we need them. 
+**Thank you.**
